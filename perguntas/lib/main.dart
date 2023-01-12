@@ -22,7 +22,7 @@ class _PerguntaAppState extends State<PerguntaApp> {
       final perguntas = [
         {
           'texto':'Qual sua cor favorita?',
-          'repostas':['Preto','Vermelho','Verde','Branco'],
+          'respostas':['Preto','Vermelho','Verde','Branco'],
         }, {
           'texto':'Qual seu animal favorito?',
           'respostas':['Coelho','Cobra','Elefante','Leão'],
@@ -31,6 +31,11 @@ class _PerguntaAppState extends State<PerguntaApp> {
           'respostas':['João','Matheus','Carlos','Rodolfo'],
         } 
       ];
+
+      List<Widget> respostas = [];
+      for(var textoRespostas in perguntas[_perguntaSelecionada].cast()['respostas']) {
+        respostas.add(Resposta(textoRespostas, _responder));
+      }
 
       return MaterialApp(
 
@@ -42,9 +47,7 @@ class _PerguntaAppState extends State<PerguntaApp> {
           body: Column(
             children: <Widget>[
               Questao(perguntas[_perguntaSelecionada]['texto'].toString()),
-              Resposta('Resposta 1', _responder),
-              Resposta('Resposta 2', _responder),
-              Resposta('Resposta 3', _responder),
+              ...respostas,
             ],
           ),
         ),
