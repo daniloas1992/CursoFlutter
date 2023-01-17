@@ -12,13 +12,28 @@ class _PerguntaAppState extends State<PerguntaApp> {
       final _perguntas = const [
         {
           'texto':'Qual sua cor favorita?',
-          'respostas':['Preto','Vermelho','Verde','Branco'],
+          'respostas':[
+            {'texto':'Preto', 'nota' : 10},
+            {'texto':'Vermelho', 'nota' : 8},
+            {'texto':'Verde', 'nota' : 3},
+            {'texto':'Branco', 'nota' : 7}
+          ],
         }, {
           'texto':'Qual seu animal favorito?',
-          'respostas':['Coelho','Cobra','Elefante','Leão'],
+          'respostas':[
+            {'texto':'Coelho', 'nota' : 6},
+            {'texto':'Cobra', 'nota' : 10},
+            {'texto':'Elefante', 'nota' : 5},
+            {'texto':'Leão', 'nota' : 4}
+          ],
         }, {
           'texto':'Qual o nome preferido?',
-          'respostas':['João','Matheus','Carlos','Rodolfo'],
+          'respostas':[
+            {'texto':'João', 'nota' : 2},
+            {'texto':'Matheus', 'nota' : 4},
+            {'texto':'Carlos', 'nota' : 7},
+            {'texto':'Rodolfo', 'nota' : 6}
+          ],
         } 
       ];
 
@@ -36,8 +51,6 @@ class _PerguntaAppState extends State<PerguntaApp> {
 
     @override
     Widget build(BuildContext context) {
-
-      
 
       return MaterialApp(
 
