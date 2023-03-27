@@ -11,13 +11,14 @@ class ExpenseApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     final ThemeData tema = ThemeData();
 
     return MaterialApp(
       home: MyHomePage(),
       theme: tema.copyWith(
         colorScheme: tema.colorScheme.copyWith(
-          primary: Color.fromARGB(255, 103, 20, 118),
+          primary: Colors.purple,
           secondary: Colors.amber,
         ),
         textTheme: tema.textTheme.copyWith(
