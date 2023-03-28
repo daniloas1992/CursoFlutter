@@ -1,0 +1,42 @@
+Widgets:
+
+https://docs.flutter.dev/development/ui/widgets
+
+Configuração da App/Page:
+
+Android -> MaterialApp -> Scaffold
+iOS -> CXupertinoApp -> CuppertinoPage
+
+Layouts:
+
+Container
+Row
+Column
+
+Row/Column:
+
+Flexible
+Expanded
+
+Containers:
+
+Stack
+Card
+
+Repetir Elementos:
+
+ListView
+GridView
+ListTile
+
+
+Criar projeto:
+
+flutter create nome_projeto
+
+
+pacote intl:
+
+precisa importar a dependencia no pubspec.yaml
+Configuração de Datas
+import 'package:intl/intl.dart'
